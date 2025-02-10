@@ -1,0 +1,3 @@
+# Scala FoldLeft Misconception
+
+This example demonstrates a subtle but common error when using `foldLeft` in Scala.  The incorrect example attempts to modify the accumulator variable directly within the fold operation. This does not work as expected because `foldLeft` operates on immutable values; modifying the accumulator within the function does not change the state for the next iteration. The correct example shows the functional approach, using the immutable properties of the language for correct summing.
